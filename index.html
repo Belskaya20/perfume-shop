@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин парфюмерии «ODOR»</title>
+</head>
+
+<body>
+    <header class="logo-navigation">
+        <nav  class="navigation">
+            <ul class="container navigation-list">
+                <li>
+                    <a class="logo" href="#">ODOR</a>
+                </li>
+                <li>
+                    <a class="navigation-list__link" href="#shop-items">Каталог</a>
+                </li>
+                <li>
+                    <a class="navigation-list__link" href="#contacts">Контакты</a>
+                </li>
+                <li>
+                    <div class="site-search">
+                        <input class="input-link" type="search" id="search-input">
+                        <button class="fa fa-search" type="button" id="search-button"></i>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+  <main class="container">
+    <div class="filters">
+      <div class="filters-sort">
+        <label for="sort">Сортировка:</label>
+        <select name="sort" id="sort">
+          <option selected value="alphabet">По алфавиту</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="cheap">Сначала дешевые</option>
+          <option value="rating">Рейтинг</option>
+        </select>
+      </div>
+    </div>
+    <section class="shop-items" id="shop-items">
+    </section>
+    <p class="container__nothing" id="nothing-found">Ничего не найдено</p>
+  </main>
+
+  <footer class="contacts" id="contacts" class="container">
+    <a class="logo" href="#">ODOR</a>
+    <h2 class="contacts__name">Свяжитесь с нами</h2>
+        <ul class="contacts-link">
+            <li class="contacts-link__element"><a href="tel:+1 123 456 78 90">+1 123 456 78 90</a>
+            </li>
+            <li class="contacts-link__element"><a href="mailto:odor@yandex.com">odor@yandex.com</a>
+            </li>
+        </ul>
+        <p class="contacts__text">Мы открыты ежедневно в 09:00 - 20:00</p>
+
+        <div class="networks">
+            <a class="networks__link" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a class="networks__link" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a class="networks__link" href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    
+<a class="arrow" href="#" title="Вернуться к началу"><i class="fa fa-chevron-up"></i></a>
+<template class="item-template" id="item-template">
+    <div class="shop-item">
+      <img class="shop-item__image" src="">
+      <div class="content">
+        <div class="tags"></div>
+        <h1 class="content__name"></h1>
+        <p class="content__text"></p>
+      </div>
+      <div class="box">
+        <span class="price"></span>
+        <div class="rating"></div>
+      </div>
+    </div>
+    </div>
+</template>
+  <script src="script.js"></script>
+</body>
+</html>

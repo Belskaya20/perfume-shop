@@ -1,0 +1,12 @@
+.contacts {
+    background-color:  rgba(85, 138, 140, 0.42);;
+    padding: 20px 0px;
+    color: $text-color;
+    &__name {
+        font-size: 2rem;
+    }
+    &__text {
+        font-size: $description-font;
+        font-weight: 300;
+    }
+}

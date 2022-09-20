@@ -1,0 +1,19 @@
+.navigation-list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    &__link {
+        color: $text-color;
+        text-decoration: none;
+        font-size: 1.375rem;
+        margin: 0 200px 0 220px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 30px;
+        
+        &:hover {
+            color: #fff;
+        }
+    }
+}

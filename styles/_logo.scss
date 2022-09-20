@@ -1,0 +1,9 @@
+.logo {
+    font-size: 3.125rem;
+    color: $text-color;
+    text-decoration: none;
+    transition: color .5s;
+    &:hover {
+        color: #fff;
+    }
+}

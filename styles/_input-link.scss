@@ -1,0 +1,10 @@
+.input-link {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+
+  .input-link:focus {
+    outline-color: blue;
+    outline-style: solid;
+  }
