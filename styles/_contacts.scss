@@ -2,6 +2,8 @@
     background-color:  rgba(85, 138, 140, 0.42);;
     padding: 20px 0px;
     color: $text-color;
+    flex-shrink: 0;
+    margin-top: 200px;
     &__name {
         font-size: 2rem;
     }
